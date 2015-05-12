@@ -21,9 +21,10 @@ As a bonus, no more issues with development on Windows and different Ruby Versio
 
 #### Hints:
 
+- If you have trouble SSHing into your box (on Windows, with `vagrant ssh`) then add the path to a ssh.exe (e.g. included with Git or clients like SourceTree) to your host system's path variable. That did the trick for me.
 - You can leave your VM by typing exit when you're SSHed into your VM.
 - Need to destroy your VM? Use `vagrant destroy`.
-- Check out [this section](https://github.com/rails/rails-dev-box#virtual-machine-management) on the rails-dev-box repo for more info about handling the virtual machine.
+- Check out [this section](https://github.com/rails/rails-dev-box#virtual-machine-management) on the rails-dev-box repo for more info about handling the VM.
 
 ## Workflow ##
 
