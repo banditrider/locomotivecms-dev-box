@@ -60,7 +60,7 @@ sudo apt-get -y install imagemagick >/dev/null 2>&1
 echo installing rake
 gem install rake -N >/dev/null 2>&1
 echo installing locomotivecms_wagon
-gem install locomotivecms_wagon -N	>/dev/null 2>&1
+gem install locomotivecms_wagon -N >/dev/null 2>&1
 
 # clean up installation files 
 apt-get -y autoremove >/dev/null 2>&1
@@ -70,3 +70,6 @@ update-locale LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8 LC_ALL=en_US.UTF-8
 echo "You are ready to conquer the world with LocomotiveCMS now!"
 W_VERSION="$(wagon version)"
 echo "wagon version: ${W_VERSION}"
+echo "NEXT STEPS: run `vagrant ssh` and change into the shared directory `cd /vagrant`."
+echo "There, you can either run `bundle exec wagon serve` to serve an existing project or create a new one in a sub folder with `bundle exec wagon init <project_slug>`."
+echo "Check out doc.locomotivehosting.com for help."
