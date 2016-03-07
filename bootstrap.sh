@@ -24,6 +24,7 @@ source /etc/profile.d/rvm.sh >/dev/null 2>&1
 rvm requirements >/dev/null 2>&1
 rvm install ruby-2.0 >/dev/null 2>&1
 rvm use ruby-2.0 --default
+rvm group add rvm vagrant
 
 echo installing Bundler
 gem install bundler -N >/dev/null 2>&1
