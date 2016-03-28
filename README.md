@@ -34,13 +34,11 @@ As a bonus, no more issues with development on Windows and different Ruby Versio
 ## What's In The Box ##
 
 - Development Tools
-- Git
 - RVM with Ruby 2.0.0
 - Bundler
 - Rake
 - Imagemagick
-- System dependencies for nokogiri
-- LocomotiveCMS Wagon
+- **LocomotiveCMS Wagon**
 
 ## Disclaimer ##
 
@@ -51,9 +49,3 @@ I'm happy to receive feedback for improvement of this VM.
 ## Debugging ##
 
 Most outputs of the provisioning processed are suppressed. If something does not install properly, open the `bootstrap.sh` file and remove `>/dev/null 2>&1` from any command you suspect to go awry. 
-
-Instead of using the bootstrap.sh, you can run the commands that went wrong listed in the files manually and try to fix any issues on the go.
-
-## License ##
-
-Released under the MIT License.
